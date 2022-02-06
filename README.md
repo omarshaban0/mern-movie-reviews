@@ -1,4 +1,7 @@
 # Welcome to the NS Movie Review Blog
+
+![MERN Stack Photo](https://www.mindinventory.com/blog/wp-content/uploads/2021/06/mean-stack.png)
+
 My friends and I love watching, analyzing and enjoying films across many genres and regions. That is why, I wanted
 to create a place where me and my friends can write and critique the movies we watch. The NS Movie Review Blog
 will allow authorized users to create, edit, and delete reviews for movies provided by the IMDb API. These reviews can be
