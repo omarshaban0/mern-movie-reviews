@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Welcome to the NS Movie Review Blog
+My friends and I love watching, analyzing and enjoying films across many genres and regions. That is why, I wanted
+to create a place where me and my friends can write and critique the movies we watch. The NS Movie Review Blog
+will allow authorized users to create, edit, and delete reviews for movies provided by the IMDb API. These reviews can be
+viewed by anybody on the homepage, and can be queried through the search function.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
+This is a **MERN Stack application** which is made up by four key technologies:
 
-## Available Scripts
+* [MongoDB](https://docs.mongodb.com/) - document base
+* [express.js](https://expressjs.com/) - Node.js web framework
+* [react.js](https://reactjs.org/) - a client-side JavaScript framework
+* [node.js](https://nodejs.org/en/docs/) - an open source JavaScript web server/runtime
 
-In the project directory, you can run:
 
-### `npm start`
+##### Other key technologies used include:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [axios](https://www.npmjs.com/package/axios) - promise based HTTP client for browser and Node.js
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom) - DOM bindings for React Router ie) the router components for websites
+* [nodemon](https://www.npmjs.com/package/nodemon) - automatically restarts node application when file changes are detected
+* [IMDb API](https://developer.imdb.com/) - an API that returns metadata on +8 million movies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+#### More technologies will be added in the future as more features are added
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Setup
+After cloning the repository to your machine:
 
-### `npm run build`
+Install dependencies in both client and server sides of the application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To test components of the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+####Backend:
 
-### `npm run eject`
+make environment file with the following keys' values:
+```
+MOVIES_DB_URI= "path to mongodb url"
+MOVIES_NS = "database name"
+PORT = "port number"
+```
+Head to the backend directory of the project, and run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+'nodemon server'
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+####Frontend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Head to the frontend directory of the project, and run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+'npm start'
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Scope
+1. I want to fix the current issues with the delete function of the API
+2. I want to add more fields to the API get functions
+After these problems are addressed, I am going to continue the frontend, and look into how to add an authorization functionality to the application.
