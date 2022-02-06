@@ -32,7 +32,7 @@ Install dependencies in both client and server sides of the application:
 
 To test components of the application:
 
-####Backend:
+#### Backend:
 
 make environment file with the following keys' values:
 ```
@@ -42,13 +42,13 @@ PORT = "port number"
 ```
 Head to the backend directory of the project, and run:
 
-'nodemon server'
+`nodemon server`
 
-####Frontend:
+#### Frontend:
 
 Head to the frontend directory of the project, and run:
 
-'npm start'
+`npm start`
 
 ## Future Scope
 1. I want to fix the current issues with the delete function of the API
