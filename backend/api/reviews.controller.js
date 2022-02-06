@@ -61,8 +61,7 @@ export default class ReviewsController {
 			console.log(reviewId)
 			const reviewResponse = await ReviewsDAO.deleteReview(
 				reviewId,
-				userId,
-				name
+				userId
 			)
 			res.json({ status: "success" })
 		} catch (e) {
